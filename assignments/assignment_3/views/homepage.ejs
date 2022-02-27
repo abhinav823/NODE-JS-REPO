@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>First Express APP</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <% users.forEach(user =>{%>
+      <div class="container">
+        <h3><%= user.name %></h3>
+        <p><%= user.email %></p>
+      </div>
+      <%})%>
+    </div>
+    <div class="button">
+        <a href = "/form">Add user</a>
+    </div>
+  </body>
+</html>
